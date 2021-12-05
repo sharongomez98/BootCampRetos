@@ -13,7 +13,7 @@ function addOne(entrada) {
     console.log("input:[", entrada.toString(), "]");
     // get final string with join, parse result to int and add 1.
     // finally get string from result.
-    const finalEntry = (BigInt(entrada.join("")) + BigInt(1)).toString();
+    const finalEntry = (parseInt(entrada.join("")) + 1).toString();
     //console.log(finalEntry, typeof(finalEntry));
     const result = finalEntry.split("").toString();
     console.log("output:[", result, "]");
